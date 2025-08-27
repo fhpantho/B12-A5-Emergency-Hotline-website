@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- fontwasome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- linking tailwind css and daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -15,7 +18,41 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
-<body>
+<body class="max-w-[1920px] mx-auto">
+
+    <!-- header section is start here  -->
+    <header class="">
+
+        <!-- nav section is start here -->
+        <nav class="flex justify-between  flex-col md:flex-row py-[20px] md:px-[60px] px-1">
+            <!-- logo section -->
+            <div class="flex justify-between items-center gap-3 w-[190px]">
+                <img class="w-[50px]" src="./assets/logo.png" alt="logo">
+                <h1 class="text-green-700 leading-none font-extrabold text-[24px]">Emergancy Service</h1>
+            </div>
+            <!-- logo section end -->
+
+            <!-- counter section -->
+            <div class=" md:gap-4 gap-0    flex md:flex-row flex-col md:my-0 my-2">
+                <div id="hart-container" class="flex gap-2 md:bg-[#17853e21] items-center px-6 py-3 md:rounded-3xl bg-[#27c85f] border-b-2  border-b-green-950 md:border-none">
+                    <span>0</span>
+                    <i class="fa-solid fa-heart text-red-600"></i>
+                </div>
+               <div id="coin-container" class="flex gap-2 md:bg-[#17853e21] items-center px-6 py-3 md:rounded-3xl bg-[#27c85f] border-b-2  border-b-green-950 md:border-none">
+                    <span>100</span>
+                    <img class="w-[20px]" src="./assets/image.png" alt="image">
+                </div>
+                <div id="coin-container" class="flex gap-2 bg-[#27c85f] items-center px-6 py-3 md:rounded-3xl text-white font-bold border-b-2  border-b-green-950 md:border-none">
+                    <span>0</span>
+                    <p>Copy</p>
+                </div>
+            </div>
+            
+        </nav>
+
+        <!-- nav section is end -->
+    </header>
+    
 
 
     <!-- linking JS file -->
