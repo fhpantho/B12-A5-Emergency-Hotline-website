@@ -64,3 +64,8 @@ document.querySelectorAll(".call-btn").forEach((btn) => {
 // history section clear button funtionality
 
 
+document.getElementById("clear-btn").addEventListener("click", () => {
+  document.getElementById("Call-history").innerHTML = "";
+});
+
+
