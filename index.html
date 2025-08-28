@@ -37,7 +37,7 @@
             <!-- counter section -->
             <div class=" md:gap-4 gap-0    flex md:flex-row flex-col md:my-0 my-2">
                 <div id="hart-container" class="flex gap-2 md:bg-[#17853e21] items-center px-6 py-3 md:rounded-3xl bg-[#27c85f] border-b-2  border-b-green-950 md:border-none">
-                    <span>0</span>
+                    <span id="love-count">0</span>
                     <i class="fa-solid fa-heart text-red-600"></i>
                 </div>
                <div id="coin-container" class="flex gap-2 md:bg-[#17853e21] items-center px-6 py-3 md:rounded-3xl bg-[#27c85f] border-b-2  border-b-green-950 md:border-none">
@@ -78,7 +78,7 @@
                         <img class="" src="./assets/emergency.png" alt="Emergancy">
                     </div>
                     
-                    <img class="w-[30px] cursor-pointer" src="./assets/transparent-heart.png" alt="transparent-heart">  
+                    <img class="w-[30px] cursor-pointer heart-icon" src="./assets/transparent-heart.png" alt="transparent-heart">  
                 </div>
                 <h1 class="text-[20px] font-bold text-gray-900 mb-3 leading-none">National Helpline Number</h1>
                 <p class="leading-none mb-3">National Emergancy</p>
@@ -87,7 +87,7 @@
                 <h1 class="px-4 py-2 bg-[#706e6e2e] rounded-2xl mb-5 inline-block">All</h1>
                 <div class="flex justify-between pb-5">
                     <button class="btn w-[48%] bg-white border-1 border-gray-500 hover:bg-black hover:text-white">Copy</button>
-                    <button class="btn w-[48%] bg-green-700 hover:bg-white hover:border-1 border-green-700 text-white hover:text-black">Call</button>
+                    <button class="call-icon btn w-[48%] bg-green-700 hover:bg-white hover:border-1 border-green-700 text-white hover:text-black">Call</button>
                 </div>
             </div>
 
@@ -97,7 +97,7 @@
                         <img class="" src="./assets/police.png" alt="police">
                     </div>
                     
-                    <img class="w-[30px] cursor-pointer" src="./assets/transparent-heart.png" alt="transparent-heart">  
+                    <img class="w-[30px] cursor-pointer heart-icon" src="./assets/transparent-heart.png" alt="transparent-heart">  
                 </div>
                 <h1 class="text-[20px] font-bold text-gray-900 mb-3 leading-none">Police Helpline Number</h1>
                 <p class="leading-none mb-3">Police Emergancy</p>
@@ -118,7 +118,7 @@
                         <img class="" src="./assets/fire-service.png" alt="fire-service">
                     </div>
                     
-                    <img class="w-[30px]" src="./assets/transparent-heart.png" alt="transparent-heart">  
+                    <img class="w-[30px] cursor-pointer heart-icon" src="./assets/transparent-heart.png" alt="transparent-heart">  
                 </div>
                 <h1 class="text-[20px] font-bold text-gray-900 mb-3 leading-none">Fire-Service Helpline</h1>
                 <p class="leading-none mb-3">Fire-Service</p>
@@ -139,7 +139,7 @@
                         <img class="" src="./assets/ambulance.png" alt="ambulance">
                     </div>
                     
-                    <img class="w-[30px]" src="./assets/transparent-heart.png" alt="transparent-heart">  
+                    <img class="w-[30px] cursor-pointer heart-icon" src="./assets/transparent-heart.png" alt="transparent-heart">  
                 </div>
                 <h1 class="text-[20px] font-bold text-gray-900 mb-3 leading-none">Ambulance Service Number</h1>
                 <p class="leading-none mb-3">Ambulance Service</p>
@@ -160,7 +160,7 @@
                         <img class="" src="./assets/emergency.png" alt="Emergancy">
                     </div>
                     
-                    <img class="w-[30px]" src="./assets/transparent-heart.png" alt="transparent-heart">  
+                    <img class="w-[30px] cursor-pointer heart-icon" src="./assets/transparent-heart.png" alt="transparent-heart">  
                 </div>
                 <h1 class="text-[20px] font-bold text-gray-900 mb-3 leading-none">Anti-coruption HelpLine</h1>
                 <p class="leading-none mb-3">Anti-coruption</p>
@@ -181,7 +181,7 @@
                         <img class="" src="./assets/emergency.png" alt="Emergancy">
                     </div>
                     
-                    <img class="w-[30px]" src="./assets/transparent-heart.png" alt="transparent-heart">  
+                    <img class="w-[30px] cursor-pointer heart-icon" src="./assets/transparent-heart.png" alt="transparent-heart">  
                 </div>
                 <h1 class="text-[20px] font-bold text-gray-900 mb-3 leading-none">Electricity Number</h1>
                 <p class="leading-none mb-3">Electricity</p>
@@ -202,7 +202,7 @@
                         <img class="" src="./assets/brac.png" alt="brac">
                     </div>
                     
-                    <img class="w-[30px]" src="./assets/transparent-heart.png" alt="transparent-heart">  
+                    <img class="w-[30px] cursor-pointer heart-icon" src="./assets/transparent-heart.png" alt="transparent-heart">  
                 </div>
                 <h1 class="text-[20px] font-bold text-gray-900 mb-3 leading-none">Brac Helpline Number</h1>
                 <p class="leading-none mb-3">Brac Emergancy</p>
@@ -223,7 +223,7 @@
                         <img class="" src="./assets/Bangladesh-Railway.png" alt="Bangladesh-Railway">
                     </div>
                     
-                    <img class="w-[30px]" src="./assets/transparent-heart.png" alt="transparent-heart">  
+                    <img class="w-[30px] cursor-pointer heart-icon" src="./assets/transparent-heart.png" alt="transparent-heart">  
                 </div>
                 <h1 class="text-[20px] font-bold text-gray-900 mb-3 leading-none">BD-Railway Helpline Number</h1>
                 <p class="leading-none mb-3">National Emergancy</p>
@@ -242,7 +242,7 @@
                         <img class="" src="./assets/emergency.png" alt="Emergancy">
                     </div>
                     
-                    <img class="w-[30px]" src="./assets/transparent-heart.png" alt="transparent-heart">  
+                    <img class="w-[30px] cursor-pointer heart-icon" src="./assets/transparent-heart.png" alt="transparent-heart">  
                 </div>
                 <h1 class="text-[20px] font-bold text-gray-900 mb-3 leading-none">Woman-child Helpline</h1>
                 <p class="leading-none mb-3">Woman-child</p>
