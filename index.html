@@ -26,26 +26,26 @@
     <header class="">
 
         <!-- nav section is start here -->
-        <nav class="flex justify-between  flex-col md:flex-row py-[20px] md:px-[60px] px-1">
+        <nav class="flex justify-between  flex-col md:flex-row py-[20px] md:px-[60px] px-1 items-center">
             <!-- logo section -->
             <div class="flex justify-between items-center gap-3 w-[190px]">
                 <img class="w-[50px]" src="./assets/logo.png" alt="logo">
-                <h1 class="text-green-700 leading-none font-extrabold text-[24px]">Emergancy Service</h1>
+                <h1 class="text-green-700 leading-none font-extrabold text-[24px] text-center md:text-s">Emergancy Service</h1>
             </div>
             <!-- logo section end -->
 
             <!-- counter section -->
-            <div class=" md:gap-4 gap-0    flex md:flex-row flex-col md:my-0 my-2">
-                <div id="hart-container" class="flex gap-2 md:bg-[#17853e21] items-center px-6 py-3 md:rounded-3xl bg-[#27c85f] border-b-2  border-b-green-950 md:border-none">
+            <div class=" gap-4    flex flex-row md:my-0 my-5 ">
+                <div id="hart-container" class="flex gap-2 bg-[#17853e21] items-center px-6 py-3 rounded-3xl   ">
                     <span id="love-count">0</span>
                     <i class="fa-solid fa-heart text-red-600"></i>
                 </div>
-               <div id="coin-container" class="flex gap-2 md:bg-[#17853e21] items-center px-6 py-3 md:rounded-3xl bg-[#27c85f] border-b-2  border-b-green-950 md:border-none">
+               <div id="coin-container" class="flex gap-2 bg-[#17853e21] items-center px-6 py-3 rounded-3xl   ">
                     <span id="coin">100</span>
                     <img class="w-[20px]" src="./assets/image.png" alt="image">
                 </div>
-                <div id="copy-container" class="flex gap-2 bg-[#27c85f] items-center px-6 py-3 md:rounded-3xl text-white font-bold border-b-2  border-b-green-950 md:border-none">
-                    <span>0</span>
+                <div id="copy-container" class="flex gap-2 bg-[#27c85f] items-center px-6 py-3 rounded-3xl text-white font-bold">
+                    <span id="copy-counter">0</span>
                     <p>Copy</p>
                 </div>
             </div>
@@ -69,10 +69,10 @@
     <!-- main section is start -->
      <main class="bg-[#f2fff6] max-w-[1400px] mx-auto flex md:flex-row flex-col p-[20px] justify-between gap-5">
 
-        <div class="card-section grid grid-cols-1 md:grid-cols-3 max-w-[1370px] mx-auto gap-5">
+        <div class="card-section grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-[1370px] mx-auto gap-5">
 
 
-            <div class="card-container w-[300px] bg-white p-[20px] rounded-md">
+            <div class="card-container sm:w-[300px] w-[400px] bg-white p-[20px] rounded-md">
                 <div class="icon-love flex justify-between items-center mb-4">
                     <div class="w-[40px] p-3 rounded-2xl bg-[#ff0e0e3d]">
                         <img class="" src="./assets/emergency.png" alt="Emergancy">
@@ -86,12 +86,12 @@
                 <br>
                 <h1 class="px-4 py-2 bg-[#706e6e2e] rounded-2xl mb-5 inline-block">All</h1>
                 <div class="flex justify-between pb-5">
-                    <button class="btn w-[48%] bg-white border-1 border-gray-500 hover:bg-black hover:text-white">Copy</button>
+                    <button class="copy-btn btn w-[48%] bg-white border-1 border-gray-500 hover:bg-black hover:text-white">Copy</button>
                     <button class="call-btn btn w-[48%] bg-green-700 hover:bg-white hover:border-1 border-green-700 text-white hover:text-black">Call</button>
                 </div>
             </div>
 
-            <div class="card-container w-[300px] bg-white p-[20px] rounded-md">
+            <div class="card-container sm:w-[300px] w-[400px] bg-white p-[20px] rounded-md">
                 <div class="icon-love flex justify-between items-center mb-4">
                     <div class="w-[40px] p-3 rounded-2xl bg-[#0e12ff3d]">
                         <img class="" src="./assets/police.png" alt="police">
@@ -105,14 +105,14 @@
                 <br>
                 <h1 class="px-4 py-2 bg-[#706e6e2e] rounded-2xl mb-5 inline-block">Police</h1>
                 <div class="flex justify-between pb-5">
-                    <button class="btn w-[48%] bg-white border-1 border-gray-500 hover:bg-black hover:text-white">Copy</button>
+                    <button class="copy-btn btn w-[48%] bg-white border-1 border-gray-500 hover:bg-black hover:text-white">Copy</button>
                     <button class="btn call-btn w-[48%] bg-green-700 hover:bg-white hover:border-1 border-green-700 text-white hover:text-black">Call</button>
                 </div>
             </div>
 
 
 
-            <div class="card-container w-[300px] bg-white p-[20px] rounded-md">
+            <div class="card-container sm:w-[300px] w-[400px] bg-white p-[20px] rounded-md">
                 <div class="icon-love flex justify-between items-center mb-4">
                     <div class="w-[40px] p-3 rounded-2xl bg-[#ff0e0e3d]">
                         <img class="" src="./assets/fire-service.png" alt="fire-service">
@@ -126,14 +126,14 @@
                 <br>
                 <h1 class="px-4 py-2 bg-[#706e6e2e] rounded-2xl mb-5 inline-block">Fire</h1>
                 <div class="flex justify-between pb-5">
-                    <button class="btn w-[48%] bg-white border-1 border-gray-500 hover:bg-black hover:text-white">Copy</button>
+                    <button class="copy-btn btn w-[48%] bg-white border-1 border-gray-500 hover:bg-black hover:text-white">Copy</button>
                     <button class="call-btn btn w-[48%] bg-green-700 hover:bg-white hover:border-1 border-green-700 text-white hover:text-black">Call</button>
                 </div>
             </div>
 
 
 
-            <div class="card-container w-[300px] bg-white p-[20px] rounded-md">
+            <div class="card-container sm:w-[300px] w-[400px] bg-white p-[20px] rounded-md">
                 <div class="icon-love flex justify-between items-center mb-4">
                     <div class="w-[40px] p-3 rounded-2xl bg-[#ff0e0e3d]">
                         <img class="" src="./assets/ambulance.png" alt="ambulance">
@@ -147,14 +147,14 @@
                 <br>
                 <h1 class="px-4 py-2 bg-[#706e6e2e] rounded-2xl mb-5 inline-block">Health</h1>
                 <div class="flex justify-between pb-5">
-                    <button class="btn w-[48%] bg-white border-1 border-gray-500 hover:bg-black hover:text-white">Copy</button>
+                    <button class="copy-btn btn w-[48%] bg-white border-1 border-gray-500 hover:bg-black hover:text-white">Copy</button>
                     <button class="call-btn btn w-[48%] bg-green-700 hover:bg-white hover:border-1 border-green-700 text-white hover:text-black">Call</button>
                 </div>
             </div>
 
             
 
-            <div class="card-container w-[300px] bg-white p-[20px] rounded-md">
+            <div class="card-container sm:w-[300px] w-[400px] bg-white p-[20px] rounded-md">
                 <div class="icon-love flex justify-between items-center mb-4">
                     <div class="w-[40px] p-3 rounded-2xl bg-[#ff0e0e3d]">
                         <img class="" src="./assets/emergency.png" alt="Emergancy">
@@ -168,14 +168,14 @@
                 <br>
                 <h1 class="px-4 py-2 bg-[#706e6e2e] rounded-2xl mb-5 inline-block">Govt</h1>
                 <div class="flex justify-between pb-5">
-                    <button class="btn w-[48%] bg-white border-1 border-gray-500 hover:bg-black hover:text-white">Copy</button>
+                    <button class="copy-btn btn w-[48%] bg-white border-1 border-gray-500 hover:bg-black hover:text-white">Copy</button>
                     <button class="call-btn btn w-[48%] bg-green-700 hover:bg-white hover:border-1 border-green-700 text-white hover:text-black">Call</button>
                 </div>
             </div>
 
             
 
-            <div class="card-container w-[300px] bg-white p-[20px] rounded-md">
+            <div class="card-container sm:w-[300px] w-[400px] bg-white p-[20px] rounded-md">
                 <div class="icon-love flex justify-between items-center mb-4">
                     <div class="w-[40px] p-3 rounded-2xl bg-[#ff0e0e3d]">
                         <img class="" src="./assets/emergency.png" alt="Emergancy">
@@ -189,14 +189,14 @@
                 <br>
                 <h1 class="px-4 py-2 bg-[#706e6e2e] rounded-2xl mb-5 inline-block">Electricity</h1>
                 <div class="flex justify-between pb-5">
-                    <button class="btn w-[48%] bg-white border-1 border-gray-500 hover:bg-black hover:text-white">Copy</button>
+                    <button class="copy-btn btn w-[48%] bg-white border-1 border-gray-500 hover:bg-black hover:text-white">Copy</button>
                     <button class="call-btn btn w-[48%] bg-green-700 hover:bg-white hover:border-1 border-green-700 text-white hover:text-black">Call</button>
                 </div>
             </div>
 
 
 
-            <div class="card-container w-[300px] bg-white p-[20px] rounded-md">
+            <div class="card-container sm:w-[300px] w-[400px] bg-white p-[20px] rounded-md">
                 <div class="icon-love flex justify-between items-center mb-4">
                     <div class="w-[40px] p-3 rounded-2xl bg-[#ff0e0e3d]">
                         <img class="" src="./assets/brac.png" alt="brac">
@@ -210,14 +210,14 @@
                 <br>
                 <h1 class="px-4 py-2 bg-[#706e6e2e] rounded-2xl mb-5 inline-block">NGO</h1>
                 <div class="flex justify-between pb-5">
-                    <button class="btn w-[48%] bg-white border-1 border-gray-500 hover:bg-black hover:text-white">Copy</button>
+                    <button class="copy-btn btn w-[48%] bg-white border-1 border-gray-500 hover:bg-black hover:text-white">Copy</button>
                     <button class="call-btn btn w-[48%] bg-green-700 hover:bg-white hover:border-1 border-green-700 text-white hover:text-black">Call</button>
                 </div>
             </div>
 
 
 
-            <div class="card-container w-[300px] bg-white p-[20px] rounded-md">
+            <div class="card-container sm:w-[300px] w-[400px] bg-white p-[20px] rounded-md">
                 <div class="icon-love flex justify-between items-center mb-4">
                     <div class="w-[40px] p-3 rounded-2xl bg-[#ff0e0e3d]">
                         <img class="" src="./assets/Bangladesh-Railway.png" alt="Bangladesh-Railway">
@@ -231,12 +231,12 @@
                 <br>
                 <h1 class="px-4 py-2 bg-[#706e6e2e] rounded-2xl mb-5 inline-block">Travel</h1>
                 <div class="flex justify-between pb-5">
-                    <button class="btn w-[48%] bg-white border-1 border-gray-500 hover:bg-black hover:text-white">Copy</button>
+                    <button class="copy-btn btn w-[48%] bg-white border-1 border-gray-500 hover:bg-black hover:text-white">Copy</button>
                     <button class="call-btn btn w-[48%] bg-green-700 hover:bg-white hover:border-1 border-green-700 text-white hover:text-black">Call</button>
                 </div>
             </div>
 
-            <div class="card-container w-[300px] bg-white p-[20px] rounded-md">
+            <div class="card-container sm:w-[300px] w-[400px] bg-white p-[20px] rounded-md">
                 <div class="icon-love flex justify-between items-center mb-4">
                     <div class="w-[40px] p-3 rounded-2xl bg-[#ff0e0e3d]">
                         <img class="" src="./assets/emergency.png" alt="Emergancy">
@@ -250,12 +250,12 @@
                 <br>
                 <h1 class="px-4 py-2 bg-[#706e6e2e] rounded-2xl mb-5 inline-block">Help</h1>
                 <div class="flex justify-between pb-5">
-                    <button class="btn w-[48%] bg-white border-1 border-gray-500 hover:bg-black hover:text-white">Copy</button>
+                    <button class="copy-btn btn w-[48%] bg-white border-1 border-gray-500 hover:bg-black hover:text-white">Copy</button>
                     <button class="call-btn btn w-[48%] bg-green-700 hover:bg-white hover:border-1 border-green-700 text-white hover:text-black">Call</button>
                 </div>
             </div>
 
-            
+            <!-- card section end here -->
 
 
 
@@ -267,11 +267,11 @@
 
             
 
-
+<!-- history section -->
 
         </div>
 
-        <div class="history-section w-[400px] mx-auto max-h-[1140px] overflow-x-hidden overflow-y-scroll bg-white rounded-xl p-3 pt-5 items-center">
+        <div class="history-section md:w-[350px] w-[400px] sm:w-full mx-auto max-h-[1140px] overflow-x-hidden overflow-y-scroll bg-white rounded-xl p-3 pt-5 items-center">
             <div class="title flex justify-between">
                 <div class="flex items-center gap-1">
                     <i class="fa-solid fa-clock-rotate-left"></i>

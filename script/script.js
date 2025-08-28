@@ -68,4 +68,24 @@ document.getElementById("clear-btn").addEventListener("click", () => {
   document.getElementById("Call-history").innerHTML = "";
 });
 
+// copy section funtionality 
 
+document.querySelectorAll(".copy-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const card = btn.closest(".card-container");
+    const serviceNumber = card.querySelector(".service-number").textContent;
+
+    // Copy to clipboard
+    navigator.clipboard.writeText(serviceNumber)
+
+    
+      // Increase copy counter
+      const copy = document.getElementById("copy-counter");
+      let copyCounter = parseInt(copy.textContent) || 0;
+      copy.textContent = copyCounter + 1;
+
+
+      alert(`✅ Number ${serviceNumber} copied to clipboard!`);
+
+  });
+});
