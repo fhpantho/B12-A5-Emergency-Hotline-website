@@ -73,7 +73,7 @@ document.getElementById("clear-btn").addEventListener("click", () => {
 document.querySelectorAll(".copy-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     const card = btn.closest(".card-container");
-    const serviceNumber = card.querySelector(".service-number").textContent;
+    const serviceNumber = card.querySelector(".service-number").innerText;
 
     // Copy to clipboard
     navigator.clipboard.writeText(serviceNumber)
@@ -81,8 +81,8 @@ document.querySelectorAll(".copy-btn").forEach((btn) => {
     
       // Increase copy counter
       const copy = document.getElementById("copy-counter");
-      let copyCounter = parseInt(copy.textContent) || 0;
-      copy.textContent = copyCounter + 1;
+      let copyCounter = parseInt(copy.innerText) || 0;
+      copy.innerText = copyCounter + 1;
 
 
       alert(`✅ Number ${serviceNumber} copied to clipboard!`);
